@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2.0;
+    font-family: "Poppins";
+}
+
+body {
+    width: 100%;
+    min-height: 100vw;
+    line-height: 1.5;
+}
+
+header section {
+    /*background-image: url(https://i.postimg.cc/G26hTNWD/festivitybar.png);*/
+    background-image: linear-gradient(90deg, #9999CC 0%, #FF7D8F 40%, #FFD93B 100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header section a {
+    text-decoration: none;
+}
+
+.mainheader {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.25em 4em 1.25em;
+}
+
+.fab {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3em;
+}
+
+.festivitylogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+.fas {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.2em;
+}
+
+nav ul {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    overflow: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 600;
+    font-size: 1em;
+    float: left;
+    display: block;
+    padding: 0.3em;
+    text-align: center;
+}
+
+#navtemp:hover {
+    color: #9999cc;
+}
+
+#naveven:hover {
+    color: #ff7d8f;
+}
+
+#navcump:hover {
+    color: #ff9f70;
+}
+
+#navserv:hover {
+    color: #ffbf52;
+}
+
+#navcont:hover {
+    color: #ffd93b;
+}
+
+/*Inicio edición index*/
+
+.mainprincipalfirst {
+    background-color: #f4f4f9;
+}
+
+.principalcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.25em;
+}
+
+.maintext {
+    color: #fdfdfd;
+    text-align: center;
+    opacity: 0.9;
+    text-shadow: 0.2em #ababab;
+    font-weight: 600;
+    font-size: 3.2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.categorias {
+    background-color: #fff2f3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 1em;
+}
+
+.categoryimg {
+    box-shadow: 0.1em 0.1em 0.1em #ababab;
+}
+
+main section div h3 {
+    text-align: center;
+    color: #33191c;
+    padding-bottom: 0.5em;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.tendencias {
+    background-color: #fff8ed;
+    padding-top: 1em;
+}
+
+.toptendencias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 1em;
+}
+
+.tendenciasimg {
+    padding-top: 0.5em;
+}
+
+main section h2 {
+    text-align: center;
+    color: #33191c;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+main section section h5 {
+    background-color: #FFBF52;
+    text-align: center;
+    color: #33191c;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/*Fin edición index*/
+
+/*Inicio edición nav temporada*/
+
+#temporadatendencia {
+    background-color: #fff8ed;
+}
+
+#newcolection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+main section div h1 {
+    text-align: center;
+    color: #0f0f14;
+    opacity: 0.9;
+    text-shadow: 0.2em #ababab;
+    font-weight: 600;
+    font-size: 2.8em;
+}
+
+main section div h2 {
+    padding-bottom: 0.5em;
+    text-align: center;
+    color: #0f0f14;
+}
+
+#newinfantil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+#newadultos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+#newocasion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+.typenew {
+    font-weight: 600;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.imgcolection {
+    box-shadow: 0.2em 0.2em 0.2em #ababab;
+}
+
+/*Fin edición nav temporada*/
+
+/*Inicio edición nav cumple | eventos*/
+
+.cumplevent0 {
+    background-color: #fff2f3;
+}
+
+.cumpleventprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+.cumplevent1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 1em;
+}
+
+.cumplevent2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 1em;
+}
+
+.type {
+    font-weight: 600;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.img {
+    box-shadow: 0.2em 0.2em 0.2em #ababab;
+}
+
+/*Fin edición nav cumple | eventos*/
+
+/*Inicio edición nav servicios*/
+
+#servicios {
+    background-color: #f4f4f9;
+}
+
+#serviciosprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+#tiposdeservicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 1em;
+}
+
+main section aside {
+    width: 500px;
+    height: 768px;
+    border: 0.01em #eaeaf4;
+    background-color: #eaeaf4;
+    text-align: justify;
+    align-items: center;
+    color: #1e1e28;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 1em;
+}
+
+.typeservicetitle {
+    text-align: center;
+    align-items: center;
+    color: #1e1e28;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 2em;
+}
+
+.imgservice {
+    padding: 1em 0em 1em;
+    max-height: 800;
+    max-width: 500;
+}
+
+@media (max-width: 1024px) {
+    #tiposdeservicios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+    .toptendencias {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    #newinfantil {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #newadultos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #newocasion {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cumplevent1 {
+        grid-template-columns: repeat(2, 2fr);
+    }
+    
+    .cumplevent2 {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .toptendencias {
+        grid-template-columns: 1fr;
+    } 
+    
+    .cumplevent1 {
+        grid-template-columns: 1fr;
+    }
+
+    .cumplevent2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Fin edición nav servicios*/
+
+/*Inicio edición nav contacto*/
+
+#contacto {
+    background-color: #f4f4f9;
+}
+
+#contactoprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+#tiposdecontacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em 3em 3em;
+}
+
+#contactform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em 5em;
+}
+
+#waysofcontact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.1em;
+}
+
+#mapitemcontact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*Inicio sección mapa contacto*/
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
+}
+
+/*Fin sección mapa contacto*/
+
+/*Fin edición nav contacto*/
+
+footer {
+    background-color: #fffbeb;
+}
+
+.fullfooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+footer section form {
+    color: #464336;
+}
+
+footer section form label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moreinformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-grow: 2;
+}
+
+footer section section section div ul {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+  }
+
+.moreinfobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.2em;
+    color: #191505;
+}
+
+.aboutus {
+    padding-right: 3em;
+}
+
+.needhelp {
+    padding-right: 3em;
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 1em;
+}
