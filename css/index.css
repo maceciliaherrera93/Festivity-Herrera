@@ -133,21 +133,17 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1.5em 1em 1em;
 }
 
 .categoryimg {
-    padding-top: 0.5em;
     box-shadow: 0.1em 0.1em 0.1em #ababab;
 }
 
 main section div h3 {
     text-align: center;
     color: #33191c;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -261,12 +257,12 @@ main section div h2 {
     font-weight: 600;
     font-size: 1.4em;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .typenew:hover {
     font-size: 1.4rem;
-    background-color: #FFBF52;
-    color: #fdfdfd;
+    color: #FFBF52;
     animation-name: show1;
     animation-duration: 1s;
 }
@@ -277,7 +273,6 @@ main section div h2 {
 }
 
 .imgcolection {
-    padding-top: 1em;
     box-shadow: 0.2em 0.2em 0.2em #ababab;
 }
 
@@ -573,7 +568,6 @@ main section aside {
         width: 480px;
         height: 315px;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -623,6 +617,20 @@ main section aside {
 }
 
 @media (max-width: 320px) {
+    .festivitylogo {
+        flex-shrink: 2;
+        width: 50vw;
+    }
+
+    .fab .fas {
+        width: 30vw;
+    }
+
+    .categoryimg {
+        width: 180px;
+        height: 180px;
+    }
+
     main section div h1 {
         font-size: 1.5rem;
     }
