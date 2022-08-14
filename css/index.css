@@ -112,7 +112,7 @@ nav ul li a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 0.25em;
+    padding-top: 0.50em;
 }
 
 .maintext {
@@ -210,7 +210,7 @@ main section section h5:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 0.50em;
 }
 
 main section div h1 {
@@ -290,7 +290,7 @@ main section div h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 0.50em;
 }
 
 .cumplevent1 {
@@ -312,12 +312,12 @@ main section div h2 {
     font-size: 1.2rem;
     text-align: center;
     transition: font-size 0.3s;
+    padding-bottom: 0.75em;
 }
 
 .type:hover {
     font-size: 1.2rem;
-    background-color: #FF7D8F;
-    color: #fdfdfd;
+    color: #FF7D8F;
     animation-name: show2;
     animation-duration: 1s;
 }
@@ -328,7 +328,6 @@ main section div h2 {
 }
 
 .img {
-    padding-top: 1em;
     box-shadow: 0.2em 0.2em 0.2em #ababab;
 }
 
@@ -346,7 +345,7 @@ main section div h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 0.50em;
 }
 
 #tiposdeservicios {
@@ -398,7 +397,7 @@ main section aside {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 0.50em;
 }
 
 #tiposdecontacto {
@@ -463,6 +462,11 @@ main section aside {
 }
 
 @media (max-width: 768px) {
+    .bannerprincipal {
+        width: 600px;
+        height: 360px;
+    }
+
     .categorias {
         grid-template-columns: 1fr;
     }
@@ -489,7 +493,6 @@ main section aside {
     .cumplevent2 {
         grid-template-columns: repeat(2, 2fr);
     }
-
         
     .mapouter {
         position: relative;
@@ -509,10 +512,18 @@ main section aside {
         width: 590px;
         height: 493px;
     }
-
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: .8em;
+    }
+
+    .bannerprincipal {
+        width: 480px;
+        height: 288px;
+    }
+
     .toptendencias {
         grid-template-columns: 1fr;
     } 
@@ -571,6 +582,11 @@ main section aside {
 }
 
 @media (max-width: 480px) {
+    .bannerprincipal {
+        width: 320px;
+        height: 192px;
+    }
+
     #tiposdeservicios {
         align-content: center;
     }
@@ -623,16 +639,57 @@ main section aside {
     }
 
     .fab .fas {
-        width: 30vw;
+        width: 50vw;
+        padding: 2em;
+    }
+
+    .bannerprincipal {
+        width: 200px;
+        height: 120px;
     }
 
     .categoryimg {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .tendenciasimg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .imgcolection {
+        width: 130px;
+        height: 130px;
+    }
+
+    .img {
+        width: 130px;
+        height: 130px;
     }
 
     main section div h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    main section div h3 {
+        font-size: 1rem;
+    }
+
+    main section h2 {
+        font-size: 1rem;
+    }
+
+    main section section div h5 {
+        font-size: 0.9rem;
+    }
+
+    .typenew {
+        font-size: 0.9rem;
+    }
+
+    .type {
+        font-size: 0.9rem;
     }
 
     #tiposdeservicios {
