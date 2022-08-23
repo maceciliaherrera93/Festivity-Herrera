@@ -1,0 +1,30 @@
+{
+  "name": "festivity_herrera",
+  "version": "1.0.0",
+  "description": "Repositorio de la idea Festivity para el curso de Desarrollo Web de Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maceciliaherrera93/Festivity-Herrera.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS"
+  ],
+  "author": "Maria Cecilia Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maceciliaherrera93/Festivity-Herrera/issues"
+  },
+  "homepage": "https://github.com/maceciliaherrera93/Festivity-Herrera#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

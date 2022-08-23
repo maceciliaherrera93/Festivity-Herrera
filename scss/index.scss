@@ -1,0 +1,48 @@
+
+header section {
+    /*background-image: url(https://i.postimg.cc/G26hTNWD/festivitybar.png);*/
+    background-image: linear-gradient(90deg, #9999CC 0%, #FF7D8F 40%, #FFD93B 100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    a {
+        text-decoration: none;
+    }
+
+    .mainheader {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.25em 4em 1.25em;
+    }
+    
+    .fab {
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.3em;
+    }
+    
+    .festivitylogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 4;
+    }
+    
+    .fas {
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.2em;
+    }    
+}
+
+
