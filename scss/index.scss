@@ -1,48 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-header section {
-    /*background-image: url(https://i.postimg.cc/G26hTNWD/festivitybar.png);*/
-    background-image: linear-gradient(90deg, #9999CC 0%, #FF7D8F 40%, #FFD93B 100%);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+/* MISC */
+@import './misc/variables';
+@import './misc/normalize';
 
-    a {
-        text-decoration: none;
-    }
+/* PARTIALS */
+@import './partials/header';
+@import './partials/footer';
 
-    .mainheader {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 1.25em 4em 1.25em;
+/* VIEWS */
+@import './views/temporada';
+@import './views/eventos';
+@import './views/cumpleanios';
+@import './views/servicios';
+@import './views/contacto';
+
+/* MAIN INDEX */
+
+main {
+    section {
+        .mainprincipalfirst {
+            background-color: #f4f4f9;
+        }
+        section {
+            .principalcontainer {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 0.50em;
+            }
+
+            .maintext {
+                color: #fdfdfd;
+                text-align: center;
+                opacity: 0.9;
+                text-shadow: 0.2em #ababab;
+                font-weight: 600;
+                font-size: 3.2vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
-    
-    .fab {
-        color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0.3em;
+    section {
+        .categorias {
+            background-color: #fff2f3;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            padding: 1.5em 1em 1em;
+        }
+
+        .categoryimg {
+            box-shadow: 0.1em 0.1em 0.1em #ababab;
+        }     
+
+        div h3 {
+            text-align: center;
+            color: #33191c;
+            padding-bottom: 1em;
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            &:hover {
+                animation-name: show;
+                animation-duration: 3s;
+            }
+
+            @keyframes show {
+                0%   {opacity: 0;}
+                50%  {opacity: 0,5}
+                100% {opacity: 1;}
+            }            
+        }
     }
-    
-    .festivitylogo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 4;
+    section {
+        h2 {
+            text-align: center;
+            color: #33191c;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .tendencias {
+            background-color: #fff8ed;
+            padding-top: 1em;
+        }
+
+        section {
+
+            .toptendencias {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                place-items: center;
+                padding: 1em;
+            }
+
+            .tendenciasimg {
+                padding-top: 0.5em;
+            }
+
+            h5 {
+                background-color: #FFBF52;
+                text-align: center;
+                color: #33191c;
+                font-size: 1.1rem;
+                font-weight: 400;
+                transition: font-size 0.25s;
+
+                &:hover {
+                    font-size: 1.1rem;
+                    background-color: #FFD93B;
+                    color: #fdfdfd;
+                }
+            }
+        }
     }
-    
-    .fas {
-        color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0.2em;
-    }    
 }
-
-
