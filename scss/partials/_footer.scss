@@ -1,83 +1,51 @@
 footer {
-    background-color: #fffbeb;
-
-    section {
-
-        .fullfooter {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding-top: 1.5em;
-            padding-bottom: 1.5em;
-            padding-left: 5em;
-            padding-right: 5em;
-        }
-    
-        form {
-            color: #464336;
-
-            .formulario {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: flex-start;
-                flex-grow: 1;
-            }
-
-            label {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
-
-        section {
-            
-            .moreinformation {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                align-content: center;
-                flex-grow: 2;
-            }
-
-            section {
-            
-                .moreinfobox {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    padding: 0.2em;
-                    color: #191505;
-                }
-
-                div ul {
-                list-style-type: none;
-                padding-bottom: 0.5em;
-                }
-
-                .aboutus {
-                    padding-right: 3em;
-                }
-                
-                .needhelp {
-                    padding-right: 3em;
-                }                
-            }
-        }  
-    }
+    background-color: $light_color3;
+    font-family: $font;
+    color: $black;
 
     .copyright {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
-        padding-left: 1em;
+        padding: 0em 1em 0em;
+    }
+
+    .fullfooter {
+        @extend .copyright;
+        justify-content: space-evenly;
+        padding: 1.5em 5em 1.5em;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+
+    .moreinformation {
+        @extend .copyright;
+        justify-content: flex-end;
+        flex-grow: 2;
+        align-content: center;
+    }
+
+    .moreinfobox {
+        @extend .copyright;
+        justify-content: space-between;
+        padding: 0em 0.2em 0em;
+        align-items: center;
+    }
+
+    .aboutus, .needhelp  {
+        padding-right: 3em;
+    }   
+
+    section section section div ul {
+            list-style-type: none;
+            padding-bottom: 0.5em;   
     }
 }
 

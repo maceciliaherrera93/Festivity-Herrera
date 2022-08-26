@@ -13,7 +13,6 @@ body {
 }
 
 header section {
-    /*background-image: url(https://i.postimg.cc/G26hTNWD/festivitybar.png);*/
     background-image: linear-gradient(90deg, #9999CC 0%, #FF7D8F 40%, #FFD93B 100%);
     background-size: cover;
     background-position: center center;
@@ -33,7 +32,7 @@ header section a {
 }
 
 .fab {
-    color: #ffffff;
+    color: #fdfdfd;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -50,7 +49,7 @@ header section a {
 }
 
 .fas {
-    color: #ffffff;
+    color: #fdfdfd;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -102,8 +101,8 @@ nav ul li a {
 
 /*Inicio edición index*/
 
-.mainprincipalfirst {
-    background-color: #f4f4f9;
+.indextemporada {
+    background-color: #fff8ed;
 }
 
 .principalcontainer {
@@ -129,7 +128,6 @@ nav ul li a {
 }
 
 .categorias {
-    background-color: #fff2f3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -140,15 +138,15 @@ nav ul li a {
     box-shadow: 0.1em 0.1em 0.1em #ababab;
 }
 
-main section div h3 {
+h3 {
     text-align: center;
-    color: #33191c;
+    color: #191919;
     padding-bottom: 1em;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
-main section div h3:hover {
+h3:hover {
     animation-name: show;
     animation-duration: 3s;
 }
@@ -159,8 +157,11 @@ main section div h3:hover {
     100% {opacity: 1;}
 }
 
-.tendencias {
-    background-color: #fff8ed;
+main section h2 {
+    text-align: center;
+    color: #191919;
+    font-size: 1.8rem;
+    font-weight: 700;
     padding-top: 1em;
 }
 
@@ -175,17 +176,10 @@ main section div h3:hover {
     padding-top: 0.5em;
 }
 
-main section h2 {
-    text-align: center;
-    color: #33191c;
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
 main section section h5 {
     background-color: #FFBF52;
     text-align: center;
-    color: #33191c;
+    color: #191919;
     font-size: 1.1rem;
     font-weight: 400;
     transition: font-size 0.25s;
@@ -201,10 +195,6 @@ main section section h5:hover {
 
 /*Inicio edición nav temporada*/
 
-#temporadatendencia {
-    background-color: #fff8ed;
-}
-
 #newcolection {
     display: flex;
     flex-wrap: wrap;
@@ -216,7 +206,7 @@ main section section h5:hover {
 
 main section div h1 {
     text-align: center;
-    color: #0f0f14;
+    color: #191919;
     opacity: 0.9;
     text-shadow: 0.2em #ababab;
     font-weight: 600;
@@ -227,7 +217,7 @@ main section div h1 {
 main section div h2 {
     padding-bottom: 0.5em;
     text-align: center;
-    color: #0f0f14;
+    color: #191919;
 }
 
 #newinfantil {
@@ -252,20 +242,6 @@ main section div h2 {
     place-items: center;
     padding-top: 0.5em;
     padding-bottom: 2em;
-}
-
-.typenew {
-    font-weight: 600;
-    font-size: 1.4em;
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-.typenew:hover {
-    font-size: 1.4rem;
-    color: #FFBF52;
-    animation-name: show1;
-    animation-duration: 1s;
 }
 
 @keyframes show1 {
@@ -363,7 +339,7 @@ main section aside {
     background-color: #eaeaf4;
     text-align: justify;
     align-items: center;
-    color: #1e1e28;
+    color: #191919;
     font-size: 1.1rem;
     font-weight: 300;
     padding: 1em;
@@ -372,7 +348,7 @@ main section aside {
 .typeservicetitle {
     text-align: center;
     align-items: center;
-    color: #1e1e28;
+    color: #191919;
     font-size: 2em;
     font-weight: 600;
     padding: 2em;
@@ -785,7 +761,7 @@ footer {
 }
 
 footer section form {
-    color: #464336;
+    color: #191919;
 }
 
 footer section form label {
@@ -816,7 +792,7 @@ footer section section section div ul {
     flex-wrap: wrap;
     align-items: center;
     padding: 0.2em;
-    color: #191505;
+    color: #191919;
 }
 
 .aboutus {
