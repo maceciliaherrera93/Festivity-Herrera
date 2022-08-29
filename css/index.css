@@ -402,6 +402,13 @@ main section aside {
     font-size: 1 rem;
 }
 
+main section section p {
+    text-align: center;
+    color: #191919;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 #mapitemcontact {
     display: flex;
     flex-wrap: wrap;
@@ -668,23 +675,11 @@ main section aside {
         font-size: 1.2rem;
     }
 
-    main section div h3 {
+    main section div h3, main section h2 {
         font-size: 1rem;
     }
 
-    main section h2 {
-        font-size: 1rem;
-    }
-
-    main section section div h5 {
-        font-size: 0.9rem;
-    }
-
-    .typenew {
-        font-size: 0.9rem;
-    }
-
-    .type {
+    main section section div h5, .typenew, .type {
         font-size: 0.9rem;
     }
 
