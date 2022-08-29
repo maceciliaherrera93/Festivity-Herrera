@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 2.0;
-    font-family: "Poppins";
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* MISC */
 @import './misc/variables';
+@import './misc/mixins';
 @import './misc/normalize';
 
 /* PARTIALS */
