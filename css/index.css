@@ -193,7 +193,7 @@ main section section h5:hover {
 
 /*Fin edición index*/
 
-/*Inicio edición nav temporada*/
+/*Inicio edición temporada*/
 
 #newcolection {
     display: flex;
@@ -244,18 +244,13 @@ main section div h2 {
     padding-bottom: 2em;
 }
 
-@keyframes show1 {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 .imgcolection {
     box-shadow: 0.2em 0.2em 0.2em #ababab;
 }
 
-/*Fin edición nav temporada*/
+/*Fin edición temporada*/
 
-/*Inicio edición nav cumple | eventos*/
+/*Inicio edición cumple | eventos*/
 
 .cumplevent0 {
     background-color: #fff2f3;
@@ -308,9 +303,9 @@ main section div h2 {
     box-shadow: 0.2em 0.2em 0.2em #ababab;
 }
 
-/*Fin edición nav cumple | eventos*/
+/*Fin edición cumple | eventos*/
 
-/*Inicio edición nav servicios*/
+/*Inicio edición servicios*/
 
 #servicios {
     background-color: #f4f4f9;
@@ -360,9 +355,9 @@ main section aside {
     height: 800px;
 }
 
-/*Fin edición nav servicios*/
+/*Fin edición servicios*/
 
-/*Inicio edición nav contacto*/
+/*Inicio edición contacto*/
 
 #contacto {
     background-color: #f4f4f9;
@@ -437,7 +432,87 @@ main section section p {
     height: 400px;
 }
 /*Fin sección mapa contacto*/
+/*Fin edición contacto*/
 
+/*Inicio edición footer */
+
+footer {
+    background-color: #fffbeb;
+}
+
+.fullfooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+footer section form {
+    color: #191919;
+}
+
+footer section form label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moreinformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-grow: 2;
+}
+
+footer section section section div ul {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+  }
+
+.moreinfobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.2em;
+    color: #191919;
+}
+
+.aboutus {
+    padding-right: 3em;
+}
+
+.needhelp {
+    padding-right: 3em;
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 1em;
+}
+
+/*Fin edición footer*/
+
+/*Responsive*/
 
 @media (max-width: 1024px) {
     #tiposdeservicios {
@@ -728,80 +803,4 @@ main section section p {
         width: 200px;
         height: 133px;
     }
-}
-
-/*Fin edición nav contacto*/
-
-footer {
-    background-color: #fffbeb;
-}
-
-.fullfooter {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    padding-left: 5em;
-    padding-right: 5em;
-}
-
-.formulario {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 1;
-}
-
-footer section form {
-    color: #191919;
-}
-
-footer section form label {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.moreinformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-grow: 2;
-}
-
-footer section section section div ul {
-    list-style-type: none;
-    padding-bottom: 0.5em;
-  }
-
-.moreinfobox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0.2em;
-    color: #191919;
-}
-
-.aboutus {
-    padding-right: 3em;
-}
-
-.needhelp {
-    padding-right: 3em;
-}
-
-.copyright {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 1em;
 }

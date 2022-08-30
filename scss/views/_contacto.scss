@@ -1,0 +1,78 @@
+#contacto {
+    background-color: $light_color1;
+}
+
+#contactoprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.50em;
+}
+
+#tiposdecontacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em 3em 3em;
+}
+
+#contactform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em 5em;
+}
+
+#waysofcontact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1 rem;
+}
+
+main {
+	section {
+		section {
+			p {
+				text-align: center;
+				color: $black;
+				font-size: 1rem;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+#mapitemcontact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*Mapa Ubicación*/
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px;
+    height: 400px;
+}

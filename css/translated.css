@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@charset "UTF-8";
 /* MISC */
 /* FUENTES */
 /* COLORES */
 /* DIMENSIONES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -316,53 +317,248 @@ footer {
     padding-bottom: 0.5em; }
 
 /* VIEWS */
-/* MAIN INDEX */
-main {
-  font-family: "Poppins", sans-serif;
+.indextemporada {
   background-color: #fff8ed; }
-  main .principalcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 0.50em;
-    position: relative; }
-  main .maintext {
-    text-align: center;
-    font-weight: 600;
-    font-size: 3.2vw;
-    opacity: 0.9;
-    color: #fdfdfd;
-    text-shadow: 0.2em #ababab;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  main .categorias {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    padding: 1em 1em 1em;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1.5em 1em 1em; }
-  main .categoryimg {
-    box-shadow: 0.1em 0.1em 0.1em #ababab; }
-  main .toptendencias {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    padding: 1em 1em 1em; }
-  main .tendenciasimg {
-    padding-top: 0.5em; }
-  main section div h3 {
-    text-align: center;
-    color: #191919;
-    padding-bottom: 1em;
-    font-size: 1.4rem;
-    font-weight: 600; }
-    main section div h3:hover {
-      animation-name: show;
-      animation-duration: 3s; }
+
+#newcolection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.50em; }
+
+main section div h1 {
+  text-align: center;
+  color: #191919;
+  opacity: 0.9;
+  text-shadow: 0.2em #ababab;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 0.5em 0.5em 1em; }
+
+main section div h2 {
+  padding-bottom: 0.5em;
+  text-align: center;
+  color: #191919; }
+
+#newinfantil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 2em; }
+
+#newadultos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 2em; }
+
+#newocasion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 2em; }
+
+.imgcolection {
+  box-shadow: 0.2em 0.2em 0.2em #ababab; }
+
+.cumplevent0 {
+  background-color: #fff2f3; }
+
+.cumpleventprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.50em; }
+
+.cumplevent1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 1em; }
+
+.cumplevent2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 1em; }
+
+.type {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: font-size 0.3s;
+  padding-bottom: 0.75em; }
+
+.type:hover {
+  font-size: 1.2rem;
+  color: #FF7D8F;
+  animation-name: show2;
+  animation-duration: 1s; }
+
+@keyframes show2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.img {
+  box-shadow: 0.2em 0.2em 0.2em #ababab; }
+
+#servicios {
+  background-color: #f4f4f9; }
+
+#serviciosprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.50em; }
+
+#tiposdeservicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 1em; }
+
+main section aside {
+  width: 500px;
+  height: 768px;
+  border: 0.01em #eaeaf4;
+  background-color: #eaeaf4;
+  text-align: justify;
+  align-items: center;
+  color: #191919;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 1em; }
+
+.typeservicetitle {
+  text-align: center;
+  align-items: center;
+  color: #191919;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 2em; }
+
+.imgservice {
+  padding: 1em 0em 1em;
+  width: 500px;
+  height: 800px; }
+
+#contacto {
+  background-color: #f4f4f9; }
+
+#contactoprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.50em; }
+
+#tiposdecontacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1em 3em 3em; }
+
+#contactform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em 5em; }
+
+#waysofcontact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1 rem; }
+
+main section section p {
+  text-align: center;
+  color: #191919;
+  font-size: 1rem;
+  font-weight: 300; }
+
+#mapitemcontact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+/*Mapa Ubicación*/
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 600px;
+  height: 400px; }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 600px;
+  height: 400px; }
+
+.gmap_iframe {
+  width: 600px;
+  height: 400px; }
+
+/* MAIN INDEX */
+.indextemporada {
+  background-color: #fff8ed; }
+
+.principalcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.50em;
+  position: relative; }
+
+.maintext {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.2vw;
+  opacity: 0.9;
+  color: #fdfdfd;
+  text-shadow: 0.2em #ababab;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 1em 1em 1em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.5em 1em 1em; }
+
+.categoryimg {
+  box-shadow: 0.1em 0.1em 0.1em #ababab; }
+
+section div h3 {
+  text-align: center;
+  color: #191919;
+  padding-bottom: 1em;
+  font-size: 1.4rem;
+  font-weight: 600; }
+  section div h3:hover {
+    animation-name: show;
+    animation-duration: 3s; }
 
 @keyframes show {
   0% {
@@ -371,18 +567,29 @@ main {
     opacity: 0,5; }
   100% {
     opacity: 1; } }
-  main section h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding-top: 1em; }
-  main section section h5 {
-    background-color: #FFBF52;
-    text-align: center;
+
+main section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 1em; }
+
+main section section h5 {
+  background-color: #FFBF52;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: font-size 0.25s; }
+  main section section h5:hover {
     font-size: 1rem;
-    font-weight: 400;
-    transition: font-size 0.25s; }
-    main section section h5:hover {
-      font-size: 1rem;
-      background-color: #FFD93B;
-      color: #fdfdfd; }
+    background-color: #FFD93B;
+    color: #fdfdfd; }
+
+.toptendencias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 1em 1em 1em; }
+
+.tendenciasimg {
+  padding-top: 0.5em; }
