@@ -2,7 +2,7 @@
     text-align: center;
     color: $black;
     padding-bottom: 1em;
-    font-size: 1.4rem;
+    font-size: $font-size+0.4;
     font-weight: 600;
 }
 
@@ -19,13 +19,22 @@
     padding: 1em 1em 1em;
 }
 
-@mixin media {
+@mixin newtemporada-grid-template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 0.5em 0em 2em;
+}
 
+@mixin responsive_desktop {
     @media (max-width: $desktop) {
         #tiposdeservicios {
                 grid-template-columns: repeat(1, 1fr);
             }
         }
+}
+
+@mixin responsive_tableth {
         
         @media (max-width: $tablet_h) {
         body {
@@ -40,49 +49,32 @@
         .categorias {
             grid-template-columns: 1fr;
         }
-        .toptendencias {
+        .toptendencias, .cumplevent1, .cumplevent2 {
             grid-template-columns: repeat(2, 2fr);
         }
 
-        #newinfantil {
+        #newinfantil, #newadultos, #newocasion {
             grid-template-columns: repeat(1, 1fr);
         }
 
-        #newadultos {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        #newocasion {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        .cumplevent1 {
-            grid-template-columns: repeat(2, 2fr);
-        }
-        
-        .cumplevent2 {
-            grid-template-columns: repeat(2, 2fr);
+        .gmap_iframe, .gmap_canvas, .mapouter {
+            width: 590px;
+            height: 493px;
         }
             
         .mapouter {
             position: relative;
             text-align: right;
-            width: 590px;
-            height: 493px;
         }
 
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            width: 590px;
-            height: 493px;
-        }
-
-        .gmap_iframe {
-            width: 590px;
-            height: 493px;
         }
     }
+}
+
+@mixin responsive_tabletv {
 
     @media (max-width: $tablet_v) {
         .mainheader {
@@ -99,17 +91,9 @@
             height: 288px;
         }
 
-        .toptendencias {
+        .toptendencias, .cumplevent1, .cumplevent2 {
             grid-template-columns: 1fr;
         } 
-        
-        .cumplevent1 {
-            grid-template-columns: 1fr;
-        }
-
-        .cumplevent2 {
-            grid-template-columns: 1fr;
-        }
 
         #tiposdeservicios {
             align-content: center;
@@ -123,7 +107,7 @@
         main section aside {
             width: 466px;
             height: 700px;
-            font-size: 1.1rem;
+            font-size: $font-size;
             text-align: justify;
             align-items: center;
             padding: 1em;
@@ -132,30 +116,28 @@
         .typeservicetitle {
             text-align: center;
             align-items: center;
-            font-size: 2rem;
+            font-size: $font-size*2;
             padding: 2em;
         }
         
         .mapouter {
             position: relative;
             text-align: right;
-            width: 480px;
-            height: 315px;
         }
 
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            width: 480px;
-            height: 315px;
         }
 
-        .gmap_iframe {
+        .gmap_iframe, .gmap_canvas, .mapouter {
             width: 480px;
             height: 315px;
         }
     }
+}
 
+@mixin responsive_mobilel {    
     @media (max-width: $mobile_l) {
         .festivitylogo {
             width: 100vw;
@@ -166,6 +148,9 @@
             width: 15vw;
         }
     }
+}
+
+@mixin responsive_mobilem { 
 
     @media (max-width: $mobile_m) {
         .bannerprincipal {
@@ -185,7 +170,7 @@
         main section aside {
             width: 290px;
             height: 435px;
-            font-size: 0.8rem;
+            font-size: ($font-size)-0.2;
             text-align: justify;
             align-items: center;
             padding: 0.5em;
@@ -194,29 +179,28 @@
         .typeservicetitle {
             text-align: center;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: $font-size+0.5;
             padding: 0.3em;
         }
 
         .mapouter {
             position: relative;
             text-align: right;
-            width: 320px;
-            height: 230px;
         }
 
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            width: 320px;
-            height: 230px;
         }
 
-        .gmap_iframe {
+        .gmap_iframe, .gmap_canvas, .mapouter {
             width: 320px;
             height: 230px;
         }
     }
+}
+
+@mixin responsive_mobiles { 
 
     @media (max-width: $mobile_s) {
         .festivitylogo {
@@ -233,7 +217,7 @@
             height: 120px;
         }
 
-        .categoryimg {
+        .categoryimg, .imgcolection, .img {
             width: 130px;
             height: 130px;
         }
@@ -243,38 +227,16 @@
             height: 120px;
         }
 
-        .imgcolection {
-            width: 130px;
-            height: 130px;
-        }
-
-        .img {
-            width: 130px;
-            height: 130px;
-        }
-
         main section div h1 {
-            font-size: 1.2rem;
+            font-size: $font-size+0.2;
         }
 
-        main section div h3 {
-            font-size: 1rem;
+        main section div h3, main section h2, main section section div h5 {
+            font-size: $font-size;
         }
 
-        main section h2 {
-            font-size: 1rem;
-        }
-
-        main section section div h5 {
-            font-size: 0.9rem;
-        }
-
-        .typenew {
-            font-size: 0.9rem;
-        }
-
-        .type {
-            font-size: 0.9rem;
+        .typenew, .type {
+            font-size: $font-size;
         }
 
         #tiposdeservicios {
@@ -291,7 +253,7 @@
         main section aside {
             width: 200px;
             height: 300px;
-            font-size: 0.6rem;
+            font-size: ($font-size)-0.4;
             text-align: justify;
             align-items: center;
             padding: 0.5em;
@@ -300,25 +262,21 @@
         .typeservicetitle {
             text-align: center;
             align-items: center;
-            font-size: 0.8rem;
+            font-size: ($font-size)-0.2;
             padding: 0.5em;
         }
 
         .mapouter {
             position: relative;
             text-align: right;
-            width: 200px;
-            height: 133px;
         }
 
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            width: 200px;
-            height: 133px;
         }
 
-        .gmap_iframe {
+        .gmap_iframe, .gmap_canvas, .mapouter {
             width: 200px;
             height: 133px;
         }

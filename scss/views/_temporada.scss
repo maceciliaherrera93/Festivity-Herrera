@@ -3,9 +3,7 @@
 }
 
 #newcolection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex-row-wrap;
     justify-content: center;
     align-items: center;
     padding-top: 0.50em;
@@ -20,7 +18,7 @@ main {
                 opacity: 0.9;
                 text-shadow: 0.2em $shadow;
                 font-weight: 600;
-                font-size: 2.5rem;
+                font-size: $font-size+1.5;
                 padding: 0.5em 0.5em 1em;
             }
 
@@ -33,28 +31,8 @@ main {
     }
 }
 
-#newinfantil {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
-}
-
-#newadultos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
-}
-
-#newocasion {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
+#newinfantil, #newadultos, #newocasion {
+    @include newtemporada-grid-template;
 }
 
 .imgcolection {

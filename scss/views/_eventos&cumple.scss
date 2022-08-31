@@ -3,38 +3,30 @@
 }
 
 .cumpleventprincipal {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex-row-wrap;
     justify-content: center;
     align-items: center;
     padding-top: 0.50em;
 }
 
 .cumplevent1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    padding: 1em;
+    @include grid-template-center-padding;
 }
 
 .cumplevent2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    padding: 1em;
+    @extend .cumplevent1;
 }
 
 .type {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: $font-size+0.2;
     text-align: center;
     transition: font-size 0.3s;
     padding-bottom: 0.75em;
 }
 
 .type:hover {
-    font-size: 1.2rem;
+    font-size: $font-size+0.2;
     color: $festivity_color2;
     animation-name: show2;
     animation-duration: 1s;

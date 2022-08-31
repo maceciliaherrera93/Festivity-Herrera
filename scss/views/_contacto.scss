@@ -3,51 +3,24 @@
 }
 
 #contactoprincipal {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex-row-wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0.50em;
+    padding: 0.50em 0em 0em;
 }
 
 #tiposdecontacto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex-row-wrap;
     justify-content: space-evenly;
     padding: 1em 3em 3em;
 }
 
 #contactform {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @extend #contactoprincipal ;
     padding: 2em 1em 5em;
 }
 
-#waysofcontact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 1 rem;
-}
-
-main {
-	section {
-		section {
-			p {
-				text-align: center;
-				color: $black;
-				font-size: 1rem;
-				font-weight: 300;
-			}
-		}
-	}
-}
+/*Mapa Ubicación*/
 
 #mapitemcontact {
     display: flex;
@@ -55,8 +28,6 @@ main {
     flex-direction: column;
     justify-content: flex-end;
 }
-
-/*Mapa Ubicación*/
 
 .mapouter {
     position: relative;
@@ -75,4 +46,25 @@ main {
 .gmap_iframe {
     width: 600px;
     height: 400px;
+}
+
+/*Fin Mapa Ubicación*/
+
+#waysofcontact {
+    @extend #mapitemcontact ;
+    justify-content: flex-start;
+    font-size: $font-size;
+    padding: 1em 0em 0em;
+}
+
+main {
+	section {
+		section {
+			p {
+				color: $black;
+				font-size: $font-size;
+				font-weight: 300;
+			}
+		}
+	}
 }

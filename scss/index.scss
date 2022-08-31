@@ -103,3 +103,10 @@ main {
 .tendenciasimg {
     padding-top: 0.5em;
 }
+
+@include responsive_desktop;
+@include responsive_tableth;
+@include responsive_tabletv;
+@include responsive_mobilel;
+@include responsive_mobilem;
+@include responsive_mobiles;

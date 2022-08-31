@@ -3,19 +3,15 @@
 }
 
 #serviciosprincipal {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex-row-wrap;
     justify-content: center;
     align-items: center;
     padding-top: 0.50em;
 }
 
 #tiposdeservicios {
-    display: grid;
+    @include grid-template-center-padding;
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    padding: 1em;
 }
 
 main {
@@ -28,7 +24,7 @@ main {
     text-align: justify;
     align-items: center;
     color: $black;
-    font-size: 1.1rem;
+    font-size: $font-size;
     font-weight: 300;
     padding: 1em;
         }
@@ -39,7 +35,7 @@ main {
     text-align: center;
     align-items: center;
     color: $black;
-    font-size: 2em;
+    font-size: $font-size*2;
     font-weight: 600;
     padding: 2em;
 }
