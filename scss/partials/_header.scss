@@ -64,22 +64,22 @@ header nav {
     }
 
     #navtemp:hover {
-        color: $festivity_color1;
+        color: map-get($navhovermap, temp);
     }
 
     #naveven:hover {
-        color: $festivity_color2;
+        color: map-get($navhovermap, even);
     }
 
     #navcump:hover {
-        color: $orange;
+        color: map-get($navhovermap, cump);
     }
 
     #navserv:hover {
-        color: $festivity_color4;
+        color: map-get($navhovermap, serv);
     }
 
     #navcont:hover {
-        color: $festivity_color3;
+        color: map-get($navhovermap, cont);
     }
 }

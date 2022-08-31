@@ -19,6 +19,14 @@ $grey: #eaeaf4;
 $orange: #ff9f70;
 $shadow: #ababab;
 
+$navhovermap: (
+    temp: $festivity_color1,
+    even: $festivity_color2,
+    cump: $orange,
+    serv: $festivity_color4,
+    cont: $festivity_color3
+);
+
 /* DIMENSIONES */
 $desktop: 1024px;
 $tablet_h: 768px;
