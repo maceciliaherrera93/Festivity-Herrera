@@ -19,6 +19,8 @@ $grey: #eaeaf4;
 $orange: #ff9f70;
 $shadow: #ababab;
 
+/* MAPA PARA MAP GET DEL NAV EN HEADER*/
+
 $navhovermap: (
     temp: $festivity_color1,
     even: $festivity_color2,
@@ -26,6 +28,11 @@ $navhovermap: (
     serv: $festivity_color4,
     cont: $festivity_color3
 );
+
+/* TAMAÑOS PREESTABLECIDOS */
+$padding: 1em;
+$width: 500px;
+$height: 800px;
 
 /* DIMENSIONES */
 $desktop: 1024px;

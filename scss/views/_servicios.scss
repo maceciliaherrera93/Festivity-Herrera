@@ -6,7 +6,7 @@
     @include flex-row-wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0.50em;
+    padding-top: $padding/2;
 }
 
 #tiposdeservicios {
@@ -17,8 +17,8 @@
 main {
     section {
         aside {
-    width: 500px;
-    height: 768px;
+    width: $width;
+    height: ($height)-32;
     border: 0.01em $grey;
     background-color: $grey;
     text-align: justify;
@@ -26,7 +26,7 @@ main {
     color: $black;
     font-size: $font-size;
     font-weight: 300;
-    padding: 1em;
+    padding: $padding;
         }
     }
 }
@@ -37,11 +37,11 @@ main {
     color: $black;
     font-size: $font-size*2;
     font-weight: 600;
-    padding: 2em;
+    padding: $padding*2;
 }
 
 .imgservice {
-    padding: 1em 0em 1em;
-    width: 500px; 
-    height: 800px;
+    padding: $padding 0em $padding;
+    width: $width; 
+    height: $height;
 }

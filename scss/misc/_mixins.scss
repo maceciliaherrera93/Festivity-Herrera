@@ -29,14 +29,30 @@
 @mixin responsive_desktop {
     @media (max-width: $desktop) {
         #tiposdeservicios {
-                grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             }
+        }
+
+        #waysofcontact {
+            padding-bottom: 2em;
+        }
+
+        #contactform {
+            padding-bottom: 2em;
+        }
+
+        .moreinfobox {
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 3em;
+            padding-top: 2em;
         }
 }
 
 @mixin responsive_tableth {
         
-        @media (max-width: $tablet_h) {
+    @media (max-width: $tablet_h) {
         body {
             font-size: .8em;
         }
@@ -196,6 +212,12 @@
         .gmap_iframe, .gmap_canvas, .mapouter {
             width: 320px;
             height: 230px;
+        }
+
+        .moreinfobox {
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0em 1em;
         }
     }
 }

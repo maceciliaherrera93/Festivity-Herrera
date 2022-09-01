@@ -6,7 +6,7 @@
     @include flex-row-wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0.50em;
+    padding-top: $padding/2;
 }
 
 main {
@@ -19,11 +19,11 @@ main {
                 text-shadow: 0.2em $shadow;
                 font-weight: 600;
                 font-size: $font-size+1.5;
-                padding: 0.5em 0.5em 1em;
+                padding: $padding/2 $padding/2 $padding;
             }
 
             h2 {
-                padding-bottom: 0.5em;
+                padding-bottom: $padding/2;
                 text-align: center;
                 color: $black;
             }

@@ -6,18 +6,18 @@
     @include flex-row-wrap;
     justify-content: center;
     align-items: center;
-    padding: 0.50em 0em 0em;
+    padding: $padding/2 0em 0em;
 }
 
 #tiposdecontacto {
     @include flex-row-wrap;
     justify-content: space-evenly;
-    padding: 1em 3em 3em;
+    padding: $padding $padding*3 $padding*3;
 }
 
 #contactform {
     @extend #contactoprincipal ;
-    padding: 2em 1em 5em;
+    padding: $padding*2 $padding $padding*5;
 }
 
 /*Mapa Ubicación*/
@@ -32,20 +32,16 @@
 .mapouter {
     position: relative;
     text-align: right;
-    width: 600px;
-    height: 400px;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    width: 600px;
-    height: 400px;
 }
 
-.gmap_iframe {
-    width: 600px;
-    height: 400px;
+.gmap_iframe, .gmap_canvas, .mapouter {
+    width: $width+100;
+    height: $height/2;
 }
 
 /*Fin Mapa Ubicación*/
@@ -54,7 +50,7 @@
     @extend #mapitemcontact ;
     justify-content: flex-start;
     font-size: $font-size;
-    padding: 1em 0em 0em;
+    padding: $padding 0em 0em;
 }
 
 main {

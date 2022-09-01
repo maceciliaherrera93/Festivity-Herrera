@@ -6,7 +6,7 @@
     @include flex-row-wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0.50em;
+    padding-top: $padding/2;
 }
 
 .cumplevent1 {
@@ -22,7 +22,7 @@
     font-size: $font-size+0.2;
     text-align: center;
     transition: font-size 0.3s;
-    padding-bottom: 0.75em;
+    padding-bottom: ($padding)-0.25;
 }
 
 .type:hover {
